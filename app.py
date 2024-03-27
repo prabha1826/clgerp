@@ -100,7 +100,6 @@ def access():
 def userslist():
     cursor.execute("SELECT * FROM users")
     data=cursor.fetchall()
-    mydb.close()
     return render_template("users.html",users=data)
 
 
@@ -147,7 +146,6 @@ def deleteuser():
         print(str(e))
         return redirect('/users') 
 
-    
     
 if __name__=="__main__":
     app.run(debug=True)
