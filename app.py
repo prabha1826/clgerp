@@ -103,6 +103,7 @@ def userslist():
     return render_template("users.html",users=data)
 
 
+
 #retrieving data  of a particular user
 @app.route("/myinfo")
 def details():
@@ -114,7 +115,8 @@ def details():
         return redirect("/")
     
     
-#edit users
+
+#edit users  information
 @app.route("/editinfo",methods = ["GET","POST"])
 def editData():
     msg=""
