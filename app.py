@@ -100,6 +100,7 @@ def access():
 def userslist():
     cursor.execute("SELECT * FROM users")
     data=cursor.fetchall()
+    mydb.close()
     return render_template("users.html",users=data)
 
 
@@ -115,7 +116,6 @@ def details():
         return redirect("/")
     
     
-
 #edit users  information
 @app.route("/editinfo",methods = ["GET","POST"])
 def editData():
@@ -124,12 +124,13 @@ def editData():
     if request.method == 'POST':
         uname=request.form['username']
         email=request.form['email']
+        print(uname)
         try:
             cursor.execute("UPDATE users SET username=%s,email=%s WHERE id=%s",(uname,email,userId,))
             mydb.commit()
-            return redirect("/users",msg=1)
+            return redirect("/users")
         except:
-            return redirect("/users",msg=0)
+            return redirect("/users")
     cursor.execute("SELECT * FROM users WHERE id=%s",(userId,))
     userData=cursor.fetchone()
     return  render_template("editmyinfo.html",user=userData,msg=msg)

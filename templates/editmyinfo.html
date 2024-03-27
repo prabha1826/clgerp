@@ -1,4 +1,11 @@
 {% extends 'header.html' %}
+{% block username %}
+    {{ user[1] }}
+{% endblock %}
+
+{% block roll %}
+    {{ user[2] }}
+{% endblock %}
 {% block content %}
 <div class="container-fluid" style="padding-top:200px;">
     <div class="row justify-content-center">
@@ -16,7 +23,7 @@
                      <input type="text" class="form-control" value={{user[3]}} name="email" >
                 </div>
                 <div class="mb-3">
-                    <button class="btn btn-success"><a href="/users">Submit</a></button>
+                    <button class="btn btn-success">Submit</button>
                 </div>
             </form>
         </div>
