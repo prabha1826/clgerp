@@ -1,0 +1,107 @@
+.navbar{
+    background: #036;
+}
+
+.navbar b{
+    color:white;
+    font-weight:500;
+    font-size:150%;
+    text-shadow:5px 5px 5px #000;
+}
+
+.navbar img{
+    border-radius: 50%;
+}
+
+.navbar i{
+    color:white;
+    padding:0em 1em;
+}
+
+.bg-pink{
+    background:palevioletred;
+    padding:6px;
+}
+
+.bg-pink marquee{
+    color:white;
+    font-weight:750;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.bg-orange{
+    background:rgb(255, 119, 0);
+}
+
+.details i{
+    color:rgb(115, 76, 207);
+    font-weight:700;
+    padding-left: 15px;
+}
+
+.padding-10 h5{
+    padding-top: 12px;
+    padding-right: 3px;
+    font-weight:500;
+}
+
+.padding-10 h2{
+    color:green;
+    font-weight:750;
+}
+
+.details p{
+    color:green;
+    font-weight: 700;
+}
+
+.details a{
+    text-decoration: none;
+
+}
+
+.details a:hover{
+    text-decoration: underline;
+}
+
+.rf{
+    color:green;
+    font-weight: 700;
+}
+
+.bg-warning{
+    color:white;
+    padding-left: 10px;
+    border-radius: 2%;
+}
+
+.table-border{
+    border:solid black;
+}
+
+.dropdown-menu li a{
+    background:rgb(5, 58, 108);
+    color:white;
+    text-decoration:none;
+}
+.dropdown-menu li a:hover{
+    background-color: rgb(246, 194, 99);
+    color:white;
+}
+
+.links{
+    text-decoration: none;
+    color:red;
+}
+
+.links:hover{
+    text-decoration:underline;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration:underline;
+}

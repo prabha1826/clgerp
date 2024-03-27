@@ -1,0 +1,13 @@
+body{   
+    background-image: url("../images/bgimg.png");
+}
+
+.bg-white{
+    background:#fff;
+    padding: 2em;
+    border-radius: 3%;
+}
+
+.login{
+    margin: 10px 350px;
+}

@@ -1,0 +1,27 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="container-fluid" style="padding-top:200px;">
+    <div class="row justify-content-center">
+        <div class="col-md-5 bg-info">
+            <h1 class="text-center">Edit Form</h1>
+            <hr/>
+
+            <form method="post">
+                <div class="mb-3">
+                    <label>username</label>                                                                     
+                    <input type="text" class="form-control" value={{user[1]}} name="username">
+                </div>
+                <div class="mb-3">
+                    <label>email</label>
+                     <input type="text" class="form-control" value={{user[3]}} name="email" >
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-success"><a href="/users">Submit</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
